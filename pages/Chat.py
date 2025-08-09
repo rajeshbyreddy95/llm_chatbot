@@ -6,8 +6,7 @@ BACKEND = "https://llm-chatbot-a7mw.onrender.com"
 
 st.set_page_config(page_title="IntelliChat", layout="centered")
 
-
-st.title("💬 IntelliChat")
+st.title("💬 Yamuna-IntelliChat")
 
 # Create the input box tied to session state
 if "chat_msg" not in st.session_state:
@@ -33,5 +32,5 @@ if st.button("Send"):
 
                 st.markdown(f'<div class="chat-response">{clean_ans.strip()}</div>', unsafe_allow_html=True)
 
-        except Exception as e:
-            st.error(f"Error: {e}")
+        except Exception:
+            st.error("Something happened. Please try again later.")
