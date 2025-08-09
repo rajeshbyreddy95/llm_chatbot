@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-BACKEND = "http://localhost:5040"
+BACKEND = "https://llm-chatbot-a7mw.onrender.com"
 
 st.title("💬 IntelliChat")
 

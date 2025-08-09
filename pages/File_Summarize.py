@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 import json
 
-BACKEND = "http://localhost:5040"
+BACKEND = "https://llm-chatbot-a7mw.onrender.com"
 
 st.title("📂 File Summarize & Q&A")
 uploaded_file = st.file_uploader("Upload a file", type=["pdf", "csv", "xlsx", "txt"])
