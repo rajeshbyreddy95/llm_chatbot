@@ -6,3 +6,4 @@ langchain-perplexity
 streamlit
 requests
 openpyxl
+langchain
