@@ -16,7 +16,12 @@ import re
 # ----------------------------------
 load_dotenv()
 app = Flask(__name__)
-CORS(app)
+CORS(
+    app,
+    resources={r"/*": {"origins": ["http://localhost:3000", "https://llm-chatbot-rho.vercel.app"]}},
+    supports_credentials=True
+)
+
 
 # Initialize LLM
 llm = ChatPerplexity(model="sonar", temperature=0.6)
