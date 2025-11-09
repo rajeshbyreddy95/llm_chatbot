@@ -16,7 +16,7 @@ import re
 # ----------------------------------
 load_dotenv()
 app = Flask(__name__)
-CORS(app, origins=["https://llm-chatbot-rho.vercel.app"])
+CORS(app, origins=["https://llm-chatbot-rho.vercel.app","http://localhost:3000"])
 
 
 # Initialize LLM
