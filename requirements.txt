@@ -1,11 +1,14 @@
+
 flask
 flask-cors
+
 python-dotenv
+
 pdfplumber
-langchain-perplexity
-streamlit
-requests
+
 openpyxl
+
+requests
 
 langchain==1.0.5
 langchain-core>=0.2.0
@@ -13,3 +16,7 @@ langchain-community>=0.2.0
 langchain-huggingface>=0.0.3
 sentence-transformers
 chromadb
+
+langchain-perplexity
+
+streamlit
