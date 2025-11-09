@@ -1,6 +1,9 @@
-// src/api/index.js
-export const API_BASE = "http://localhost:5040";
+export const API_BASE =
+  process.env.REACT_APP_API_BASE || "http://localhost:5040";
 
+/**
+ * 💬 Chat API
+ */
 export const chatWithBot = async (message) => {
   try {
     const res = await fetch(`${API_BASE}/chat`, {
@@ -26,7 +29,7 @@ export const chatWithBot = async (message) => {
 };
 
 /**
- * ✅ PDF Summarization API
+ * 📄 PDF Summarization API
  */
 export const summarizePDF = async (file) => {
   const formData = new FormData();
